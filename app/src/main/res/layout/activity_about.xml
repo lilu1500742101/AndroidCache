@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text='关于ACache轻量级缓存框架缓存框架介绍\n
+        特点\n
+        1、可配置，可以配置缓存路径，缓存大小，缓存数量等。\n
+        2、可以设置缓存超时时间，缓存超时自动失效，并被删除。\n
+        3、支持多线程\n
+        4、磁盘存储\n
+        应用场景\n
+        1、替换SharePreference当做配置文件\n
+        2、可以缓存网络请求数据，比如android客户端可以缓存http请求的新闻内容，缓存时间假设为1个小时，超时后自动失效，让客户端重新请求新的数据，减少客户端流量，同时减少服务器并发量' />
+
+
+
+</LinearLayout>

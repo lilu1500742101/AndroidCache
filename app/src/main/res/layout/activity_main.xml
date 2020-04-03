@@ -21,4 +21,18 @@
         android:text="获取图片"
         android:onClick="getImage"/>
 
+    <Button
+        android:id="@+id/SimpleCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义SimpleCache"
+        android:onClick="SimpleCache"/>
+    <Button
+        android:id="@+id/BitmapCache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BitmapCache"
+        android:onClick="BitmapCache"/>
+
+
 </LinearLayout>
