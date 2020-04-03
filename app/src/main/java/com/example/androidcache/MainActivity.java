@@ -1,15 +1,16 @@
 package com.example.androidcache;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
 import com.example.androidcache.image.ImageLoader;
+import com.example.androidcache.view.simplecachedemo.SimpleCacheActivity;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     ImageView imageView = null;
 
     @Override
@@ -28,5 +29,15 @@ public class MainActivity extends AppCompatActivity {
         if(bmp != null){
             imageView.setImageBitmap(bmp);
         }
+    }
+
+    //跳转至自定义SimpleCache
+    public void SimpleCache(View v) {
+        startActivity(new Intent().setClass(this, SimpleCacheActivity.class));
+    }
+
+    //跳转至自定义SimpleCache
+    public void BitmapCache(View v) {
+        startActivity(new Intent().setClass(this, BitmapCacheActivity.class));
     }
 }
